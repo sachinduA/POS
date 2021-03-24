@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+    <title>Nukked Shop</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- menubar -->
+        <section>
+
+            <div class="d-flex flex-row">
+                <div class="p-3 flex-fill">
+                    <span style="font-size: 1.5em;">
+                        <i class="fas fa-bars"></i>
+                        <b>BILLING</b>
+                    </span>
+                </div>
+                <div class="p-3 flex-grow-1 "></div>
+                <div class="p-3 justify-content-end">
+                    <span style="font-size: 1.5em;">
+                        <button type="button" class="btn btn-secondary btn">Add Inventory</button>
+                        <button type="button" class="btn "><i class="far fa-bell"></i></button>
+                        <button type="button" class="btn "><i class="fas fa-redo"></i></i></button>
+                        <button type="button" class="btn "><i class="fas fa-sign-out-alt"></i></i></button>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        <!-- end of menubar -->
+
+        <!-- body -->
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <!-- right column -->
+                <div class="col-8">
+                    <!-- bill bar -->
+                    <div class="bill_bar">
+                        <div class="bill_box">
+                            Bill 1
+                        </div>
+                        <div class="bill_box2">
+                            Bill 2
+                        </div>
+                        <div class="add">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- search bar -->
+                        <div class="search_bar">
+                            <div>
+                                <input class="search_box" type="search" placeholder="Search">
+                            </div>
+                            <div class="dropdown">
+                                <div class="dropdown_select">
+                                    <span class="select"> All Items</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                            </div>
+
+                            <div class="btn" type="button">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Product Code
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!---------- detail bar ---------------->
+                    <div class="details_bar">
+                        <div class="title">
+                            Amul Chease Cubes
+                        </div>
+                        <div class="product_details">
+                            <div>
+                                SALE PRICE(Rs.)
+                                <input type="text">
+                            </div>
+                            <div>
+                                QUANTITY
+                                <div class="quantity">
+                                    <div type="button">
+                                        <i class="fas fa-sm fa-minus"></i>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div type="button">
+                                        <i class="fas fa-sm fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                DISCOUNT(Rs)
+                                <input type="text">
+                            </div>
+
+                            <div>
+                                DISCOUNT(%)
+                                <input type="text">
+                            </div>
+                            <div>
+                                WEIGHT
+                                <div class="weight">
+                                    <div>
+
+                                    </div>
+                                    <div type="button">
+                                        <i class="fas fa-redo-alt"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <i class="fas fa-sm fa-exchange-alt"></i>
+                            <div>
+                                AMOUNT
+                                <input type="text">
+                            </div>
+                            <div>
+                                TOTAL(Rs)
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- main button(cancel and delete) -->
+                    <div class="main_button">
+                        <div type="button">
+                            <span>CANCEL</span>
+                        </div>
+                        <div type="button">
+                            <span>UPDATE</span>
+                        </div>
+                    </div>
+
+                    <!-- table -->
+                    <div class="table">
+                        <table class="table bg-white">
+                            <thead class=" table-dark">
+                                <tr>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">MRP</th>
+                                    <th scope="col">SP</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p><b>Amul Cheese Cubes</b></p>
+                                    </th>
+                                    <td>200.00</td>
+                                    <td>200.00</td>
+                                    <td>
+                                        <i class="fas fa-minus-circle"></i>
+                                        1
+                                        <i class="fas fa-plus-circle"></i>
+                                    </td>
+                                    <td>
+                                        200.00
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p><b>Trichup Herbal Hair</b></p>
+                                    </th>
+                                    <td>100.00</td>
+                                    <td>90.00</td>
+                                    <td>
+                                        <i class="fas fa-minus-circle"></i>
+                                        1
+                                        <i class="fas fa-plus-circle"></i>
+                                    </td>
+                                    <td>
+                                        90.00
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p><b>Trichup Herbal Hair</b></p>
+                                    </th>
+                                    <td>100.00</td>
+                                    <td>90.00</td>
+                                    <td>
+                                        <i class="fas fa-minus-circle"></i>
+                                        1
+                                        <i class="fas fa-plus-circle"></i>
+                                    </td>
+                                    <td>
+                                        90.00
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p><b>Trichup Herbal Hair</b></p>
+                                    </th>
+                                    <td>100.00</td>
+                                    <td>90.00</td>
+                                    <td>
+                                        <i class="fas fa-minus-circle"></i>
+                                        1
+                                        <i class="fas fa-plus-circle"></i>
+                                    </td>
+                                    <td>
+                                        90.00
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p><b>Trichup Herbal Hair</b></p>
+                                    </th>
+                                    <td>100.00</td>
+                                    <td>90.00</td>
+                                    <td>
+                                        <i class="fas fa-minus-circle"></i>
+                                        1
+                                        <i class="fas fa-plus-circle"></i>
+                                    </td>
+                                    <td>
+                                        90.00
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- left column -->
+                <div class="col-4" id="buttonPanel">
+
+                    <!-- customer details -->
+                    <div class="customer_details">
+                        <div>
+                            <p>Vivek Shukla</p>
+                            <p>12334667812</p>
+                        </div>
+                        <div>
+                            <p>Avg Bskt : Rs.1093.00</p>
+                            <p>LVT : 1,50,937.00</p>
+                            <p>Loyalty Points : Rs.502</p>
+                            <p>Credit Balance : Rs.3000</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-2x fa-percentage"></i>
+                            Offers
+                        </div>
+
+                    </div>
+                    <div class="details">
+                        <p>Visit First:</p>
+                        <p style="color: orange;">1 year ago</p>
+                        <p>|</p>
+                        <p>Last Visit:</p>
+                        <p style="color: orange;">1 day ago</p>
+                        <div type="button"><i class="fas fa-pencil-alt"></i></div>
+                        <div type="button"><i class="fas fa-times"></i></div>
+                    </div>
+
+
+
+                    <!-- roght column -->
+                    <div class="right_col1">
+                        <div type="button">
+                            <i class="fas fa-tags"></i>
+                            Multiple Price
+                        </div>
+                        <div type="button">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Estimates
+                        </div>
+                        <div type="button">
+                            <i class="fas fa-store-slash"></i>
+                            No Sale
+                        </div>
+                    </div>
+
+                    <!-- right column 1 -->
+                    <div class="right_col">
+                        <div type="button">
+
+                            <i class="fas fa-2x fa-keyboard"></i>
+                            <p>Keypad</p>
+
+                        </div>
+                        <div type="button">
+                            <i class="fas fa-2x fa-archive"></i>
+                            <p>Suggestions</p>
+                        </div>
+                        <div type="button">
+                            <i class="far fa-2x fa-heart"></i>
+                            <p>Quik Items</p>
+                        </div>
+                        <div type="button">
+
+                            <i class="fas fa-2x fa-plus"></i>
+                            <p>Custom Items</p>
+
+                        </div>
+                    </div>
+
+                    <!-- calculator -->
+                    <div class="container bg-white">
+                        <div class="calculator_row">
+                            <div type="button">
+                                1
+                            </div>
+                            <div type="button">
+                                2
+                            </div>
+                            <div type="button">
+                                3
+                            </div>
+                        </div>
+
+                        <div class="calculator_row">
+                            <div type="button">
+                                4
+                            </div>
+                            <div type="button">
+                                5
+                            </div>
+                            <div type="button">
+                                6
+                            </div>
+                        </div>
+
+                        <div class="calculator_row">
+                            <div type="button">
+                                7
+                            </div>
+                            <div type="button">
+                                8
+                            </div>
+                            <div type="button">
+                                9
+                            </div>
+                        </div>
+
+                        <div class="calculator_row">
+                            <div type="button">
+                                Prev
+                            </div>
+                            <div type="button">
+                                0
+                            </div>
+                            <div type="button">
+                                Next
+                            </div>
+                        </div>
+
+                        <div class="calculator_row">
+                            <div type="button">
+                                <i class="fas fa-backspace"></i>
+                            </div>
+                            <div type="button">
+                                .
+                            </div>
+                            <div type="button" style="background-color: #8ac926; border: none; color: white;">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of calculator -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div>
+                ITEM(S)/QTY
+                <P>8 / 10</P>
+            </div>
+            <div>
+                TOTAL DISC
+                <P>Rs.10.00</P>
+            </div>
+            <div>
+                TOTAL AMOUNT
+                <P>Rs.1,270.00</P>
+            </div>
+            <div type="button">
+                <h2>PAY</h2>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+</html>

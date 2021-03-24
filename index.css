@@ -1,0 +1,412 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;    
+}
+
+/* -------------------detail bar styles----------------*/
+.details_bar{
+    display: flex;   
+    width: 100%;
+    height: 110px; 
+    border: none; 
+    background-color: white;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: #cbe5f6;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product_details{
+    display: flex;    
+    width: 100%;    
+    justify-content:space-between;
+    align-items: center;   
+    margin-top: 0%;
+}
+
+.product_details input{
+    width: 100px;
+    height: 30PX;
+    color: red;
+}
+.product_details > div{
+    display: flex;
+    width: 10%;
+    height: 100px;
+    font-size: x-small;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+}
+.product_details > div:last-child{
+    display: flex;
+    width: 10%;
+    height: 100px;
+    font-size: x-small;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+    /* margin-right: 15px; */
+}
+
+.product_details .fas{
+    display: flex;    
+    padding: 0;
+    border: none;
+    width: 0px;
+    flex-direction: row;
+    
+}
+.product_details .quantity, .weight{
+    display: flex;
+    width: 100%;
+    height: 30px;   
+}
+.product_details .quantity >div, .weight>div{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.product_details .quantity >div:nth-child(2){
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.product_details .weight >div:first-child{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/*---------- main buttons(cancel and update) ----------------*/
+.main_button{
+    display: flex;    
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.main_button > div{
+    display: flex;
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------customer details styles------------- */
+.customer_details{
+    display: flex;
+    width: 100%;
+    
+}
+
+.customer_details > div{
+    display: flex;
+    width: 45%;
+    height: 80px;
+    background-color: white;
+    align-items: stretch;
+    flex-direction: column;
+    font-size: smaller;
+   /* margin: 0px 0px 0px 0px; */
+    
+}
+.customer_details > div:last-child{
+    display: flex;
+    width: 20%;
+    height: 80px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 10px;
+    
+}
+.customer_details p{
+    display: flex;
+    height: 15px;
+    font-size: x-small;
+    font-weight: bolder;
+    margin: 0px 0px 0px 5px;
+    
+}
+.details{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    width: 80%;
+    font-size: x-small;
+    font-weight: bolder;
+   justify-content: space-around;
+   border-top: 1px solid black;
+    
+}
+
+
+/* -----------------right column styles-------------- */
+.right_col{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.right_col > div{
+    display: flex;
+    width: 25%;
+    height: 80px;
+    background-color: white;
+    border-right: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.right_col > div:last-child{
+    display: flex;
+    width: 25%;
+    height: 80px;
+    background-color: white;
+    border-right: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+ 
+/* -----------------right column 1 styles-------------- */
+
+.right_col1{
+    display: flex;
+    width: 100%;
+    
+}
+
+.right_col1 > div{
+    display: flex;
+    width: 35%;
+    height: 55px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 10px 10px 0px; 
+    
+}
+.right_col1 > div:last-child{
+    display: flex;
+    width: 35%;
+    height: 55px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px 10px; 
+    
+}
+/* ---------------calculator styles------------- */
+.calculator_row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.calculator_row > div{
+    display: flex;
+    width: 30%;
+    height: 45px;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 30px;   
+    
+}
+
+/* ---------------------bill_bar style----------------*/
+.bill_bar{
+    display: flex;    
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    
+}
+.bill_box, .bill_box2{
+    display: flex;    
+    width: 10%;
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;    
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+    
+}
+.bill_box:hover, .bill_box2:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #0496ff;
+    
+}
+.add{
+    display: flex;    
+    width: 5%;
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;    
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+}
+.add:hover{
+    cursor: pointer;
+}
+/* ------------------------search box styles------------------*/
+.search_box .input{
+    border: 0;
+    outline: 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.search_bar{
+    display: flex;    
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.search_bar .search_box{
+    display: flex;
+    width: 550px;
+    height: 30px;
+    border: 1px solid black;  
+    
+}
+.dropdown{    
+    width: 150px;   
+    
+}
+.dropdown_select{
+    display: flex;    
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    font-size: small;
+}
+.search_bar .btn{
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #6c757d;
+    border-radius: 0;
+    justify-content: space-around;
+}
+.search_bar .btn:hover{
+    background-color: #adb5bd;
+}
+.search_bar .btn.fas{
+    color: white;
+}
+.form-check{
+    margin-left: 30px;
+}
+
+/* progress bar */
+
+
+/* .customer_details.progress{
+    height: 30px;
+    width: 300px;
+    color: yellow;
+}
+
+.customer_details.progress.progress-done{
+    display: flex;
+    background-color: #0496ff;
+    height: 100%;
+    width: 300px;
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+
+/* -----------------footer---------------- */
+.footer{
+    display: flex;
+    width:100%;
+    height: 50px;
+    
+}
+
+.footer > div{
+    display: flex;
+    width: 69%;
+    height: 100%;
+    justify-content: center;   
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    color: #0496ff;
+    font-size: smaller;
+    
+    padding-top: 20px;
+}
+.footer > div:last-child{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;   
+    align-items: center; 
+    color: white;
+    background-color: #0496ff;
+    padding-top: 10px;
+}
+h2{
+    font-weight: bolder;
+}
+.footer p{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
